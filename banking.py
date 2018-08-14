@@ -1,24 +1,5 @@
-from abc import ABCMeta, abstractmethod
 from random import randint
-
-class Account(metaclass = ABCMeta):
-    @abstractmethod
-    def createAccount():
-        return 0
-    @abstractmethod
-    def authenticate():
-        return 0
-    @abstractmethod
-    def withdraw():
-        return 0
-    @abstractmethod
-    def deposit():
-        return 0
-    @abstractmethod
-    def displayBalance():
-        return 0
-
-class SavingsAccount(Account):
+class SavingsAccount():
     def __init__(self):
         self.savingsAccounts = {}
     def createAccount(self, name, initialDeposit):
